@@ -102,7 +102,7 @@ nav > a {
     background-repeat: no-repeat;
     background-position: center center;
     animation-name: hero-zoom;
-    animation-duration: 4s;
+    animation-duration: 2s;
     animation-fill-mode: forwards;
     height: 45.02em; 
 }
@@ -122,11 +122,11 @@ nav > a {
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
-    height: 200px;
-    width: 500px;
+    height: 160px;
+    width: 300px;
     padding-left: 10px;
     background-color: rgba(6, 38, 151, 0.7);
-    bottom: 30px;
+    top: 300px;
     left: 150px;
     position: absolute;
     font-family: teko, sans-serif;
