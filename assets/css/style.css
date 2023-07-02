@@ -78,13 +78,16 @@ nav{
 nav i {
     color: rgba(6, 38, 151, 0.7);
 }
+
 h1 {
     color: white;
     text-decoration: none;
 }
+
 #download-link {
     text-decoration: none;
 }
+
 a {
     text-decoration: none;
 }
@@ -94,17 +97,25 @@ nav > a {
     color: white;
     padding: 15px 0px 15px 0px;
 }
-.hero-image {
+
+.hero__image {
+    background-image: url(./images/hero-image.png);
     width: 100%;
-    margin: 0px;
-    padding: 0px;
-    background-image: url('../css/images/hero-image.png');
+    height: 100vh;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-size: cover;
+}
+.form__image {
+    background-image: url(./images/minecraft-2053888_1280.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     animation-name: hero-zoom;
     animation-duration: 2s;
     animation-fill-mode: forwards;
-    height: 45.02em; 
 }
 
 @keyframes hero-zoom {
@@ -113,7 +124,7 @@ nav > a {
     }
 
     to {
-        transform: scale(1.02);
+        transform: scale(1.1);
     }
 }
 
@@ -145,7 +156,30 @@ display: inline;
 .socials {
     text-align: center;
     font-size: 220%;
+    display: flex;
+    justify-content:center;
+    gap: 4rem;
+    
 }
 .socials i {
     color: white;
+}
+form {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    height: 100%;
+    width: 33%;
+    padding-left: 10px;
+    background-color: rgba(6, 38, 151, 0.7);
+    top: 9.6em;
+    left: 33%;
+    position: absolute;
+    font-family: teko, sans-serif;
+    
+}
+.form {
+    text-align: center;
+    padding: 2rem;
+    position: relative;
 }
