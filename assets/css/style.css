@@ -23,29 +23,36 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /*end of css reset*/
 
 
@@ -75,6 +82,7 @@ nav{
     font-family: teko, sans-serif;
     letter-spacing: 1px;
 }
+
 nav i {
     color: rgba(6, 38, 151, 0.7);
 }
@@ -85,7 +93,7 @@ h1 {
 }
 
 #download-link {
-    text-decoration: none;
+    text-decoration: underline grey 2px;
 }
 
 a {
@@ -106,6 +114,7 @@ nav > a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .form__image {
     background-image: url(./images/minecraft-2053888_1280.png);
     width: 100%;
@@ -113,19 +122,6 @@ nav > a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    animation-name: hero-zoom;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes hero-zoom {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(1.1);
-    }
 }
 
 #cover-text {
@@ -143,6 +139,7 @@ nav > a {
     font-family: teko, sans-serif;
     
 }
+
 footer {
     position: fixed;
     bottom: 0;
@@ -150,20 +147,23 @@ footer {
     background-color: black;
     width: 100%
 }
+
 footer li {
 display: inline;
 }
+
 .socials {
     text-align: center;
     font-size: 220%;
     display: flex;
     justify-content:center;
     gap: 4rem;
-    
 }
+
 .socials i {
     color: white;
 }
+
 form {
     color: white;
     text-transform: uppercase;
@@ -176,7 +176,6 @@ form {
     left: 33%;
     position: absolute;
     font-family: teko, sans-serif;
-    
 }
 .form {
     text-align: center;
