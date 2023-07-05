@@ -201,3 +201,8 @@ form {
 #right-newspaper {
     float:right;
 }
+.terms {
+    height: 50px;
+    overflow-y: scroll;
+    background-color: rgba(32, 94, 225, 0.7);
+}
