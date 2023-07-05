@@ -191,4 +191,13 @@ form {
     padding: 2rem;
     position: relative;
 }
-
+#form-head {
+    text-decoration: underline;
+    font-size: 250%;
+}
+#left-newspaper{
+    float:left;
+}
+#right-newspaper {
+    float:right;
+}
