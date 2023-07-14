@@ -14,8 +14,8 @@
 
 <body>
     <header>
-        <h1 class="main-header"><i class="fa-regular fa-chess-rook"></i><aria-label>Chess rook icon</aria-label>
-            Minecraft <aria-label>Chess rook icon</aria-label><i class="fa-regular fa-chess-rook"></i></h1>
+        <h1 class="main-header"><i id="chess-rook-left" class="fa-regular fa-chess-rook"></i><aria-label>Chess rook icon</aria-label>
+            Minecraft <aria-label>Chess rook icon</aria-label><i id="chess-rook-right" class="fa-regular fa-chess-rook"></i></h1>
     </header>
     <nav>
         <a href="index.html" class="a-index"><i class="fa-solid fa-barcode"></i><aria-label>Dark Blue Barcode
@@ -30,7 +30,6 @@
         <a href="form.html" class="a-form"><i class="fa-solid fa-barcode"></i><aria-label>Dark Blue Barcode
                 Icon</aria-label> Sign Up <aria-label>Dark Blue Barcode Icon</aria-label><i
                 class="fa-solid fa-barcode"></i></a>
-        </a>
     </nav>
     <section class="form__image">
         <aria-label>Background image of a minecraft dark wooded area</aria-label>
@@ -44,34 +43,34 @@
                 <aria-label>Newspaper icon</aria-label>
                 <i class="fa-regular fa-newspaper" id="right-newspaper"></i>
             </h2>
-            <br><br>
+            <br><br class="br-2">
             <label for="email">Your Email:</label>
-            <input type="email" name="email">
-            <br><br>
+            <input type="email" name="email" id="email">
+            <br><br class="br-2">
             <label for="password">Your Password:</label>
-            <input type="password" name="password">
-            <br><br>
+            <input type="password" name="password" id="password">
+            <br><br class="br-2">
             <label for="first-name">Your First Name:</label>
             <input type="text" name="first-name" id="first-name">
-            <br><br>
+            <br><br class="br-2">
             <label for="last-name">Your Last Name:</label>
             <input type="text" name="last-name" id="last-name">
-            <br><br>
+            <br><br class="br-2">
             <label for="birthday">When is your birthday?</label>
             <input type="date" id="birthday" name="birthday">
-            <br><br>
+            <br><br class="br-2">
             <label for="gender">Gender:</label>
             <br>
             <label for="male">Male</label>
-            <input type="checkbox" name="male">
+            <input type="checkbox" name="male" id="male" id="gender">
             <label for="female">Female</label>
-            <input type="checkbox" name="female">
-            <label for="Other">Other</label>
-            <input type="checkbox" name="other">
-            <br><br>
+            <input type="checkbox" name="female" id="female">
+            <label for="other">Other</label>
+            <input type="checkbox" name="other" id="other">
+            <br><br class="br-2">
             <label for="country">What country do you live in?</label>
             <input type="text" name="country" id="country">
-            <br><br>
+            <br><br class="br-2">
             <label for="time-gaming">How Often do You Game?</label>
             <br>
             <label for="none">No time!</label>
@@ -85,8 +84,8 @@
             <br>
             <label for="12+">12+ hours!</label>
             <input type="checkbox" name="12+" id="12+">
-            <br><br>
-            <label for="email-advirtising">Would you like to sign up to hear all about Minecrafts update
+            <br><br class="br-2">
+            <label for="email-advirtising" id="email-advirtising">Would you like to sign up to hear all about Minecrafts update
                 releases?</label>
             <br>
             <label for="yes">Yes</label>
@@ -94,7 +93,7 @@
             <label for="no">No</label>
             <input type="radio" name="no" id="no">
             <br><br>
-            <label for="terms">Terms and Conditions</label>
+            <label for="terms" id="terms">Terms and Conditions</label>
             <br>
             <br>
             <div class="terms">
@@ -114,19 +113,19 @@
     <footer>
         <ul class="socials">
             <li>
-                <a href="https://facebook.com" target="blank_" rel="noopener"
+                <a href="https://www.facebook.com/minecraft" target="blank_" rel="noopener"
                     aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
             </li>
             <li>
-                <a href="https://twitter.com" target="blank_" rel="noopener"
+                <a href="https://twitter.com/minecraft?s=21&t=lUpC_AQB7F_WSxwXWcF1aA" target="blank_" rel="noopener"
                     aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter"></i></a>
             </li>
             <li>
-                <a href="https://youtube.com" target="blank_" rel="noopener"
+                <a href="https://youtube.com/channel/UCQvWX73GQygcwXOTSf_VDVg" target="blank_" rel="noopener"
                     aria-label="Visit our Youtube page (opens in a new tab)"><i class="fab fa-youtube"></i></a>
             </li>
             <li>
-                <a href="https://instagram.com" target="blank_" rel="noopener"
+                <a href="https://instagram.com/minecraft?igshid=MzRlODBiNWFlZA==" target="blank_" rel="noopener"
                     aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
             </li>
         </ul>
