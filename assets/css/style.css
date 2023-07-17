@@ -238,7 +238,7 @@ nav>a {
 }
 
 #cover-text {
-    font-size: 350%;
+    font-size: 3.5rem;
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -248,8 +248,16 @@ nav>a {
     background-color: rgba(6, 38, 151, 0.7);
     top: 300px;
     left: 150px;
-    position: absolute;
     font-family: teko, sans-serif;
+}
+
+.contact {
+    background-image: url(./images/minecraft-g64265b9e0_1280.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 footer {
@@ -266,7 +274,7 @@ footer li {
 
 .socials {
     text-align: center;
-    font-size: 220%;
+    font-size: 2.5rem;
     display: flex;
     justify-content: center;
     gap: 4rem;
@@ -286,19 +294,17 @@ form {
     background-color: rgba(6, 38, 151, 0.7);
     top: 9.6em;
     left: 33%;
-    position: absolute;
     font-family: teko, sans-serif;
 }
 
 .form {
     text-align: center;
     padding: 2rem;
-    position: relative;
 }
 
 #form-head {
     text-decoration: underline;
-    font-size: 250%;
+    font-size: 2.5rem;
 }
 
 #left-newspaper {
@@ -326,11 +332,10 @@ form {
 
 .cover-text-image {
     color: white;
-    font-size: 200%;
+    font-size: 2rem;
     text-transform: uppercase;
     letter-spacing: 3px;
     background-color: rgba(251, 192, 147, 0.7);
-    position: absolute;
     font-family: teko, sans-serif;
     text-align: center;
     align-content: center;
@@ -342,12 +347,12 @@ form {
 }
 
 #cover-text-heading {
-    font-size: 250%;
+    font-size: 3rem;
     text-decoration: underline 2px;
 }
 
 #champagne {
-    font-size: 75%;
+    font-size: 1rem;
     padding: 20px;
 }
 
@@ -358,7 +363,7 @@ form {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1rem;
     border-radius: 5px;
 }
 
@@ -369,7 +374,7 @@ form {
     color: white;
     width: 30%;
     font-family: teko, sans-serif;
-    font-size: 200%;
+    font-size: 2rem;
     height: 255px;
 }
 
@@ -380,7 +385,7 @@ form {
     color: white;
     width: 30%;
     font-family: teko, sans-serif;
-    font-size: 200%;
+    font-size: 2rem;
     height: 255px;
 }
 
@@ -416,7 +421,7 @@ aria-label {
 
 @media screen and (max-width: 1200px) {
     #overview-text {
-        font-size: 75%;
+        font-size: 1rem;
     }
 
 
@@ -460,13 +465,13 @@ aria-label {
     }
 
     #cover-text-heading {
-        font-size: 100%;
+        font-size: 1rem;
     }
 }
 
 @media screen and (max-width: 700px) {
     #cover-text {
-        font-size: 200%;
+        font-size: 2rem;
         height: 130px;
         width: 250px;
     }
@@ -484,15 +489,15 @@ aria-label {
     }
 
     #cover-text {
-        font-size: 200%;
+        font-size: 2rem;
         height: 130px;
         width: 250px;
     }
     #cover-text-heading {
-        font-size: 75%;
+        font-size: 1rem;
     }
     .cover-text-image p {
-        font-size: 75%;
+        font-size: 1rem;
     }
     .cover-text-image {
         top: 150px;
@@ -504,7 +509,7 @@ aria-label {
         display: none;
     }
     nav {
-        font-size: 100%;
+        font-size: 1rem;
         padding: 0, 10, 0, 10;
     }
 }
@@ -521,10 +526,10 @@ aria-label {
     }
     
     #cover-text-heading {
-        font-size: 75%;
+        font-size: 1rem;
     }
     .cover-text-image p {
-        font-size: 75%;
+        font-size: 1rem;
     }
     #champagne {
         display: none;
@@ -540,7 +545,7 @@ aria-label {
     form {
         width: 97%;
         left: 0;
-        font-size: 80%;
+        font-size: 1rem;
         height: 500px;
         
     }
@@ -555,7 +560,7 @@ aria-label {
         left: 0;
         top: 350px;
 
-        font-size: 200%;
+        font-size: 2rem;
         height: 75px;
         width: 250px;
 
@@ -563,12 +568,10 @@ aria-label {
 
     #right {
         height: 170px;
-        position: relative;
     }
 
     #left {
         height: 150px;
-        position: relative;
         bottom: 0px;
     }
     .br-2 {
