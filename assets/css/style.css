@@ -227,8 +227,9 @@ nav>a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 body {
-    background-color: black;
+    background-color: #3C5E4E;
 }
 
 .about__image {
@@ -246,12 +247,19 @@ body {
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
-    width: 300px;
-    padding-left: 10px;
     background-color: rgba(6, 38, 151, 0.7);
-    top: 300px;
-    left: 150px;
     font-family: teko, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    width: 35%;
+}
+
+#icon-download-left {
+    float: left;
+}
+
+#icon-download-right {
+    float: right;
 }
 
 #contact__image {
@@ -268,7 +276,7 @@ footer {
     bottom: 0;
     height: 4em;
     background-color: black;
-    width: 100%
+    width: 100%;
 }
 
 footer li {
@@ -292,15 +300,20 @@ form {
     text-transform: uppercase;
     letter-spacing: 2px;
     height: 100%;
-    width: 33%;
     background-color: rgba(6, 38, 151, 0.7);
     font-family: teko, sans-serif;
     margin: 0 auto;
+    width: 33%;
 }
-
 .form {
-    text-align: center;
     padding: 2rem;
+    display: flex;
+    gap: 1px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    height: 940px;
+    background-color: rgba(6, 38, 151, 0.7);
 }
 
 #form-header {
@@ -317,10 +330,19 @@ form {
 }
 
 .terms {
-    height: 50px;
-    overflow-y: scroll;
+    height: 70px;
+    overflow-y: auto;
     background-color: rgba(32, 94, 225, 0.7);
+    text-decoration: none;
+    border: 2px solid rgba(32, 94, 225, 0.7);
+    border-radius: 10px;
+    font-size: 15px;
 }
+    .terms::-webkit-scrollbar {
+        width: 0.5em; 
+      }
+
+
 
 .submit__image {
     background-image: url(./images/minecraft-6923660_1280.png);
@@ -338,18 +360,16 @@ form {
     letter-spacing: 3px;
     background-color: rgba(251, 192, 147, 0.7);
     font-family: teko, sans-serif;
-    text-align: center;
-    align-content: center;
-    left: 20%;
-    right: 20%;
     width: 60%;
     margin: 0 auto;
-    padding: 20px rgba(251, 192, 147, 0.7);
+    text-align: center;
+
 }
 
 #submit-image-text-heading {
     font-size: 3rem;
     text-decoration: underline 2px;
+    text-align: center;
 }
 
 #champagne {
@@ -376,7 +396,7 @@ form {
     width: 30%;
     font-family: teko, sans-serif;
     font-size: 2rem;
-   
+
 }
 
 #about-text {
@@ -386,7 +406,7 @@ form {
     color: white;
     width: 30%;
     font-family: teko, sans-serif;
-    font-size: 2rem;    
+    font-size: 2rem;
 }
 
 
@@ -407,95 +427,88 @@ aria-label {
 
 /*Media Queries*/
 
-@media screen and (max-width: 1200px) {
-    #overview-text {
-        font-size: 1rem;
+@media screen and (max-width: 1200px){
+    form {
+        width: 50%;
     }
-
-
 }
-
 @media screen and (max-width: 950px) {
+    #left-newspaper {
+        display: none;
+    }
+    #right-newspaper {
+        display:none;
+    }
     nav {
-        clear: left;
-        float: left;
-        margin-bottom: 20px;
         line-height: 25px;
         width: 100%;
     }
 
-    #overview-text {
-        margin: 0 auto;
-        width: 90;
-    }
-
-    #right,
-    #left {
+    #about-text,
+    #contact-text {
         width: inherit;
     }
 
-    #center {
+    #index-image-text {
+        font-size: 3.5rem;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 300px;
+        padding-left: 10px;
+        background-color: rgba(6, 38, 151, 0.7);
+        font-family: teko, sans-serif;
+    }
+    #icon-download-left{
+        display: none;
+    }
+    #icon-download-right {
         display: none;
     }
 
-    form {
-        top: 250px;
-        width: 60%;
-        height: 100%;
-        margin: 0 auto;
-        left: 20%;
-        right: 20%;
-    }
-
-    .form__image {
-        top: 50px;
-        bottom: 50px;
-    }
-
-    #cover-text-heading {
+    #submit-image-text-heading {
         font-size: 1rem;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    #cover-text {
-        font-size: 2rem;
-        height: 130px;
-        width: 250px;
     }
 }
 
 @media screen and (max-width: 760px) {
-    #left {
-        height: 180px;
+    #about-text {
         width: 100%;
     }
-   
 
-    #right {
-        height: 150px;
+    #submit-image-text {
+        width: 90%;
+        font-size: 1rem;
     }
 
-    #cover-text {
+    #index-image-text {
         font-size: 2rem;
-        height: 130px;
+        height: 70px;
         width: 250px;
     }
-    #cover-text-heading {
+    #icon-download-left{
+        display: initial;
+    }
+    #icon-download-right {
+        display: initial;
+    }
+
+    #submit-image-text-heading {
         font-size: 1rem;
     }
-    .cover-text-image p {
-        font-size: 1rem;
-    }
+
     .cover-text-image {
         top: 150px;
     }
+
     #champagne-left {
         display: none;
     }
+
     #champagne-right {
         display: none;
     }
+
     nav {
         font-size: 1rem;
         padding: 0, 10, 0, 10;
@@ -503,25 +516,37 @@ aria-label {
 }
 
 @media screen and (max-width: 500px) {
-    .cover-text-image {
+    #index-image-text {
         top: 300px;
     }
+    form {
+        width: 97%;
+    }
+
     #chess-rook-left {
         display: none;
     }
+
+    #submit-image-text-heading {
+        font-size: 1.5rem;
+    }
+
     #chess-rook-right {
         display: none;
     }
-    
+
     #cover-text-heading {
         font-size: 1rem;
     }
+
     .cover-text-image p {
         font-size: 1rem;
     }
+
     #champagne {
         display: none;
     }
+
     #left-newspaper {
         display: none;
     }
@@ -529,22 +554,8 @@ aria-label {
     #right-newspaper {
         display: none;
     }
-
-    form {
-        width: 97%;
-        left: 0;
-        font-size: 1rem;
-        height: 500px;
-        
-    }
-
-    #left {
-        background-color: #205ee1;
-        width: 100%;
-        height: 200px;
-    }
-
-    #cover-text {
+    
+    #index-image-text {
         left: 0;
         top: 350px;
 
@@ -553,17 +564,4 @@ aria-label {
         width: 250px;
 
     }
-
-    #right {
-        height: 170px;
-    }
-
-    #left {
-        height: 150px;
-        bottom: 0px;
-    }
-    .br-2 {
-        display: none;
-    }
-
 }
