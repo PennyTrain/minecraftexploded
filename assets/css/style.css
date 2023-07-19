@@ -190,11 +190,6 @@ nav i {
 
 }
 
-h1 {
-    color: white;
-    text-decoration: none;
-}
-
 #download-link-minecraft {
     text-decoration: underline grey 2px;
     color: white;
@@ -428,17 +423,28 @@ aria-label {
 /*Media Queries*/
 
 @media screen and (max-width: 1200px){
+
     form {
         width: 50%;
     }
 }
+
+@media screen and (max-width: 1000px) {
+    #about-text {
+        width: 60%;
+    }
+}
+
 @media screen and (max-width: 950px) {
+
     #left-newspaper {
         display: none;
     }
+
     #right-newspaper {
         display:none;
     }
+
     nav {
         line-height: 25px;
         width: 100%;
@@ -459,15 +465,13 @@ aria-label {
         background-color: rgba(6, 38, 151, 0.7);
         font-family: teko, sans-serif;
     }
+
     #icon-download-left{
         display: none;
     }
+
     #icon-download-right {
         display: none;
-    }
-
-    #submit-image-text-heading {
-        font-size: 1rem;
     }
 }
 
@@ -486,19 +490,13 @@ aria-label {
         height: 70px;
         width: 250px;
     }
+
     #icon-download-left{
         display: initial;
     }
+
     #icon-download-right {
         display: initial;
-    }
-
-    #submit-image-text-heading {
-        font-size: 1rem;
-    }
-
-    .cover-text-image {
-        top: 150px;
     }
 
     #champagne-left {
@@ -535,14 +533,6 @@ aria-label {
         display: none;
     }
 
-    #cover-text-heading {
-        font-size: 1rem;
-    }
-
-    .cover-text-image p {
-        font-size: 1rem;
-    }
-
     #champagne {
         display: none;
     }
@@ -558,10 +548,12 @@ aria-label {
     #index-image-text {
         left: 0;
         top: 350px;
-
         font-size: 2rem;
         height: 75px;
         width: 250px;
+    }
 
+    .socials  {
+        font-size: 30px;
     }
 }
