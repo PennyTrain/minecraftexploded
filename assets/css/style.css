@@ -142,7 +142,7 @@ table {
     color: black;
     text-align: center;
     height: 3rem;
-    margin: 0px;
+    
     font-weight: bold;
     font-size: 3rem;
     padding: 20px;
@@ -212,6 +212,14 @@ nav>a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+iframe {
+    height: 20rem;
+    width: 20rem;
+}
+.minecraft-video {
+    margin: 0 auto;
+    margin-top: 10px;
+}
 
 #form__image {
     background-image: url(./images/minecraft-2053888_1280.png);
@@ -245,7 +253,8 @@ body {
     font-family: teko, sans-serif;
     margin: 0 auto;
     text-align: center;
-    width: 35%;
+    width: 60%;
+    padding: 3rem;
 }
 
 #icon-download-left {
@@ -256,10 +265,13 @@ body {
     float: right;
 }
 
+.contact-page__container {
+    height: 90vh;
+}
 #contact__image {
     background-image: url(./images/minecraft-g64265b9e0_1280.png);
     width: 100%;
-    height: 100vh;
+    height: 83vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -294,7 +306,6 @@ form {
     text-transform: uppercase;
     letter-spacing: 2px;
     height: 100%;
-    background-color: rgba(6, 38, 151, 0.7);
     font-family: teko, sans-serif;
     margin: 0 auto;
     width: 33%;
@@ -332,9 +343,10 @@ form {
     border-radius: 10px;
     font-size: 15px;
 }
-    .terms::-webkit-scrollbar {
+
+.terms::-webkit-scrollbar {
         width: 0.5em; 
-      }
+}
 
 
 
@@ -428,10 +440,21 @@ aria-label {
     }
 }
 
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 1010px) {
+
     #about-text {
         width: 60%;
     }
+
+    #icon-download-left{
+        display: none;
+    }
+
+    #icon-download-right {
+        display: none;
+    }
+
 }
 @media screen and (max-width: 950px) {
 
@@ -453,24 +476,7 @@ aria-label {
         width: inherit;
     }
 
-    #index-image-text {
-        font-size: 3.5rem;
-        color: white;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        width: 300px;
-        padding-left: 10px;
-        background-color: rgba(6, 38, 151, 0.7);
-        font-family: teko, sans-serif;
-    }
-
-    #icon-download-left{
-        display: none;
-    }
-
-    #icon-download-right {
-        display: none;
-    }
+   
 }
 
 @media screen and (max-width: 760px) {
@@ -485,16 +491,11 @@ aria-label {
 
     #index-image-text {
         font-size: 2rem;
-        height: 70px;
-        width: 250px;
     }
 
-    #icon-download-left{
-        display: initial;
-    }
-
-    #icon-download-right {
-        display: initial;
+    iframe {
+        width: 80%;
+        height: auto;
     }
 
     #champagne-left {
@@ -512,9 +513,11 @@ aria-label {
 }
 
 @media screen and (max-width: 500px) {
-    #index-image-text {
-        top: 300px;
-    }
+   iframe {
+    width: 80%;
+    height: auto;
+   }
+
     form {
         width: 97%;
     }
@@ -544,11 +547,7 @@ aria-label {
     }
     
     #index-image-text {
-        left: 0;
-        top: 350px;
         font-size: 2rem;
-        height: 75px;
-        width: 250px;
     }
 
     .socials  {
