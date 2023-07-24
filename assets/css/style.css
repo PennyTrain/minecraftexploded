@@ -143,13 +143,9 @@ q:after {
     content: none;
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
+
 
 /*end of css reset*/
-
 
 .main-header {
     background-color: orange;
@@ -328,7 +324,7 @@ form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 1px;
+    gap: 3px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: vertical;
@@ -336,7 +332,7 @@ form {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    height: 940px;
+
     background-color: rgba(6, 38, 151, 0.7);
 }
 
@@ -360,6 +356,21 @@ form {
     text-decoration: none;
     border-radius: 10px;
     font-size: 15px;
+}
+
+table{
+    background-color: rgba(32, 94, 225, 0.7);
+    font-size: 1.5rem;
+    color: white;
+    margin: 0 auto;
+    font-family: teko, sans-serif;
+    border: 2px white;
+    border-spacing: 1rem;    
+}
+
+th, td {
+    border: 1px white;
+    text-align: center;
 }
 
 .terms::-webkit-scrollbar {
@@ -488,7 +499,6 @@ aria-label {
 
     nav {
         line-height: 25px;
-        width: 100%;
     }
 
     #about-text,
