@@ -1,3 +1,17 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 /* css reset: http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -152,45 +166,36 @@ table {
 }
 
 nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 40px;
     font-size: 1.5rem;
     background-color: black;
     font-family: teko, sans-serif;
     letter-spacing: 1px;
-
 }
 
-.a-index:hover {
-    text-decoration: underline 1px;
-    color: white;
-}
-
-.a-about:hover {
-    text-decoration: underline 1px;
-    color: white;
-}
-
-.a-contact:hover {
-    text-decoration: underline 1px;
-    color: white;
-}
-
-.a-form:hover {
-    text-decoration: underline 1px;
+.nav-hoverstate:hover {
+    -webkit-text-decoration: underline 1px;
+            text-decoration: underline 1px;
     color: white;
 }
 
 nav i {
     color: rgba(6, 38, 151, 0.7);
-
 }
 
 #download-link-minecraft {
-    text-decoration: underline grey 2px;
+    -webkit-text-decoration: underline grey 2px;
+            text-decoration: underline grey 2px;
     color: white;
 }
 
@@ -205,24 +210,26 @@ nav>a {
 }
 
 #index__image {
-    background-image: url(./images/hero-image.png);
+    background-image: url(./images/index__background.png);
     width: 100%;
     height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 iframe {
     height: 20rem;
     width: 20rem;
 }
+
 .minecraft-video {
     margin: 0 auto;
     margin-top: 10px;
 }
 
 #form__image {
-    background-image: url(./images/minecraft-2053888_1280.png);
+    background-image: url(./images/form__background.png);
     width: 100%;
     height: 100vh;
     background-position: center;
@@ -235,7 +242,7 @@ body {
 }
 
 .about__image {
-    background-image: url(./images/minecraft.png);
+    background-image: url(./images/about__background.png);
     width: 100%;
     height: 100vh;
     background-position: center;
@@ -268,8 +275,9 @@ body {
 .contact-page__container {
     height: 90vh;
 }
+
 #contact__image {
-    background-image: url(./images/minecraft-g64265b9e0_1280.png);
+    background-image: url(./images/contact__background.png);
     width: 100%;
     height: 83vh;
     background-position: center;
@@ -292,8 +300,12 @@ footer li {
 .socials {
     text-align: center;
     font-size: 2.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 4rem;
 }
 
@@ -310,12 +322,19 @@ form {
     margin: 0 auto;
     width: 33%;
 }
+
 .form {
     padding: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 1px;
-    flex-wrap: wrap;
-    flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     text-align: center;
     height: 940px;
     background-color: rgba(6, 38, 151, 0.7);
@@ -339,7 +358,6 @@ form {
     overflow-y: auto;
     background-color: rgba(32, 94, 225, 0.7);
     text-decoration: none;
-    border: 2px solid rgba(32, 94, 225, 0.7);
     border-radius: 10px;
     font-size: 15px;
 }
@@ -348,10 +366,8 @@ form {
         width: 0.5em; 
 }
 
-
-
 .submit__image {
-    background-image: url(./images/minecraft-6923660_1280.png);
+    background-image: url(./images/submit__background.png);
     width: 100%;
     height: 100vh;
     background-position: center;
@@ -374,7 +390,8 @@ form {
 
 #submit-image-text-heading {
     font-size: 3rem;
-    text-decoration: underline 2px;
+    -webkit-text-decoration: underline 2px;
+            text-decoration: underline 2px;
     text-align: center;
 }
 
@@ -431,6 +448,9 @@ aria-label {
     display: none;
 }
 
+.mobile-padding__about {
+    padding: 20px;
+}
 /*Media Queries*/
 
 @media screen and (max-width: 1200px){
@@ -444,7 +464,7 @@ aria-label {
 @media screen and (max-width: 1010px) {
 
     #about-text {
-        width: 60%;
+        width: 50%;
     }
 
     #icon-download-left{
@@ -508,7 +528,7 @@ aria-label {
 
     nav {
         font-size: 1rem;
-        padding: 0, 10, 0, 10;
+        padding: 0px 10px 0px 10px;
     }
 }
 
@@ -517,7 +537,6 @@ aria-label {
     width: 80%;
     height: auto;
    }
-
     form {
         width: 97%;
     }
