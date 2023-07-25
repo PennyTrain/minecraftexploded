@@ -215,8 +215,8 @@ nav>a {
 }
 
 iframe {
-    height: 20rem;
-    width: 20rem;
+    height: 25rem;
+    width: 30rem;
 }
 
 .minecraft-video {
@@ -359,7 +359,7 @@ form {
 }
 
 table{
-    background-color: rgba(32, 94, 225, 0.7);
+    background-color: rgba(32, 94, 225);
     font-size: 1.5rem;
     color: white;
     margin: 0 auto;
@@ -371,6 +371,7 @@ table{
 th, td {
     border: 1px white;
     text-align: center;
+    width: 30%;
 }
 
 .terms::-webkit-scrollbar {
@@ -418,8 +419,9 @@ th, td {
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 2rem;
     border-radius: 5px;
+    font-family: teko, sans-serif;
 }
 
 #contact-text {
@@ -430,8 +432,9 @@ th, td {
     width: 30%;
     font-family: teko, sans-serif;
     font-size: 2rem;
-
 }
+
+
 
 #about-text {
     margin: 0 auto;
@@ -444,8 +447,18 @@ th, td {
     gap: 10px;
 }
 
+.about-paragraphs {
+    gap: 10px;
+}
 
 
+#book-link{
+    color: white;
+}
+
+#book-link:hover {
+    text-decoration: underline 1px white;
+}
 
 #contact__button {
     display: inline-block;
@@ -456,6 +469,7 @@ th, td {
     text-decoration: none;
     font-size: 1em;
     border-radius: 5px;
+    font-family: teko, sans-serif;
 }
 
 aria-label {
@@ -543,6 +557,17 @@ aria-label {
         font-size: 1rem;
         padding: 0px 10px 0px 10px;
     }
+}
+@media screen and (max-width: 600px) {
+  #about-text{
+    font-size: 1.5rem;
+  }  
+  #contact-text {
+    font-size: 1.5rem;
+  }
+  table {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
