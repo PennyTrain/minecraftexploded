@@ -354,12 +354,12 @@ form {
     overflow-y: auto;
     background-color: rgba(32, 94, 225, 0.7);
     text-decoration: none;
-    border-radius: 10px;
+    border-collapse: 100%;
     font-size: 15px;
 }
 
 table{
-    background-color: rgba(32, 94, 225);
+    background-color: rgba(32, 94, 225, 0.7);
     font-size: 1.5rem;
     color: white;
     margin: 0 auto;
@@ -367,11 +367,15 @@ table{
     border: 2px white;
     border-spacing: 1rem;    
 }
-
 th, td {
-    border: 1px white;
+    border: 1px solid white;
+    padding: 5px;
     text-align: center;
-    width: 30%;
+    background-color: rgba(32, 94, 225);
+}
+
+thead, th {
+    background-color: black;
 }
 
 .terms::-webkit-scrollbar {
