@@ -194,6 +194,9 @@ nav i {
             text-decoration: underline grey 2px;
     color: white;
 }
+#download-link-minecraft:hover {
+    text-decoration: underline white 2px;
+}
 
 a {
     text-decoration: none;
@@ -215,8 +218,8 @@ nav>a {
 }
 
 iframe {
-    height: 25rem;
-    width: 30rem;
+    height: 20rem;
+    width: 25rem;
 }
 
 .minecraft-video {
@@ -258,6 +261,10 @@ body {
     text-align: center;
     width: 60%;
     padding: 3rem;
+}
+
+#index-p {
+    font-size: 2rem;
 }
 
 #icon-download-left {
@@ -458,10 +465,11 @@ thead, th {
 
 #book-link{
     color: white;
+    text-decoration: underline 1px white;
 }
 
 #book-link:hover {
-    text-decoration: underline 1px white;
+    text-decoration: underline 3px white;
 }
 
 #contact__button {
@@ -507,6 +515,10 @@ aria-label {
         display: none;
     }
 
+    #index-p {
+        font-size: 1rem;
+      }
+
 }
 @media screen and (max-width: 950px) {
 
@@ -530,7 +542,7 @@ aria-label {
    
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 768px) {
     #about-text {
         width: 100%;
     }
@@ -566,6 +578,7 @@ aria-label {
   #about-text{
     font-size: 1.5rem;
   }  
+ 
   #contact-text {
     font-size: 1.5rem;
   }
