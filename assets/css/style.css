@@ -470,7 +470,7 @@ button {
     text-align: center;
     background-color: rgba(32, 94, 225, 0.7);
     color: white;
-    width: 30%;
+    width: 80%;
     font-family: teko, sans-serif;
     font-size: 2rem;
     gap: 10px;
@@ -519,6 +519,7 @@ aria-label {
     form {
         width: 50%;
     }
+
 }
 
 
@@ -592,6 +593,10 @@ aria-label {
         font-size: 1rem;
         padding: 0px 10px 0px 10px;
     }
+
+    .p-media-query {
+        font-size: 1rem;
+    }
 }
 @media screen and (max-width: 600px) {
   #about-text{
@@ -604,7 +609,7 @@ aria-label {
   table {
     font-size: 1rem;
   }
-  
+
   .p-media-query {
     font-size: 1rem;
 }
