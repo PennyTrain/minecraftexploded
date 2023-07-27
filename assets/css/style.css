@@ -276,7 +276,7 @@ body {
 }
 
 .contact-page__container {
-    height: 90vh;
+    height: 100%;
 }
 
 #contact__image {
@@ -292,6 +292,8 @@ footer {
     height: 4em;
     background-color: black;
     width: 100%;
+    position: fixed;
+    bottom: 0;
 }
 
 footer li {
@@ -558,6 +560,15 @@ aria-label {
     }
 }
 
+@media only screen and (orientation: landscape) {
+    section {
+        padding-bottom: 160px;
+    }
+    #contact__image {
+        padding-bottom: 160px;
+    }
+    }
+
 @media screen and (max-width: 768px) {
     #about-text {
         width: 100%;
@@ -598,9 +609,6 @@ aria-label {
         height: 100%;
     }
 
-    footer{
-        display: block;
-    }
 }
 @media screen and (max-width: 600px) {
   #about-text{
