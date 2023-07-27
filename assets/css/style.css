@@ -604,6 +604,11 @@ aria-label {
   table {
     font-size: 1rem;
   }
+  
+  .p-media-query {
+    font-size: 1rem;
+}
+
 }
 
 @media screen and (max-width: 500px) {
