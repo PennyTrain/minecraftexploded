@@ -339,7 +339,6 @@ form {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-
     background-color: rgba(6, 38, 151, 0.7);
 }
 
@@ -374,6 +373,7 @@ table{
     border: 2px white;
     border-spacing: 1rem;    
 }
+
 th, td {
     border: 1px solid white;
     padding: 5px;
@@ -408,7 +408,6 @@ thead, th {
     width: 60%;
     margin: 0 auto;
     text-align: center;
-
 }
 
 #submit-image-text-heading {
@@ -422,6 +421,7 @@ thead, th {
     font-size: 1rem;
     padding: 20px;
 }
+
 button {
     color: white;
     display: inline-block;
@@ -437,6 +437,7 @@ button {
 #contact__button:hover{
     text-decoration: underline white 2px;
 }
+
 #submit-link{
     color: white;
     display: inline-block;
@@ -448,10 +449,10 @@ button {
     border-radius: 5px;
     font-family: teko, sans-serif;
 }
+
 #submit-link:hover {
     text-decoration: underline white 3px;
 }
-
 
 #contact-text {
     margin: 0 auto;
@@ -462,8 +463,6 @@ button {
     font-family: teko, sans-serif;
     font-size: 2rem;
 }
-
-
 
 #about-text {
     margin: 0 auto;
@@ -596,6 +595,14 @@ aria-label {
 
     .p-media-query {
         font-size: 1rem;
+    }
+
+    #index__image{
+        height: 100%;
+    }
+
+    footer{
+        display: block;
     }
 }
 @media screen and (max-width: 600px) {
