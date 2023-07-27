@@ -321,7 +321,7 @@ form {
     height: 100%;
     font-family: teko, sans-serif;
     margin: 0 auto;
-    width: 33%;
+    width: 60%;
 }
 
 .form {
@@ -426,7 +426,7 @@ button {
     padding: 10px 20px;
     text-align: center;
     text-decoration: underline white 1px;
-    font-size: 2rem;
+    font-size: 1rem;
     border-radius: 5px;
     font-family: teko, sans-serif;
 }
@@ -513,7 +513,7 @@ aria-label {
 @media screen and (max-width: 1200px){
 
     form {
-        width: 50%;
+        width: 90%;
     }
 
 }
@@ -621,12 +621,9 @@ aria-label {
 }
 
 @media screen and (max-width: 500px) {
-   iframe {
-    width: 80%;
-    height: auto;
-   }
-    form {
-        width: 97%;
+    iframe {
+        width: 80%;
+        height: auto;
     }
 
     #chess-rook-left {
