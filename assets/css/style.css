@@ -143,8 +143,6 @@
         content: none;
     }
 
-
-
     /*end of css reset*/
     /* Styling Pages */
 
@@ -154,7 +152,6 @@
         color: black;
         text-align: center;
         height: 3rem;
-
         font-weight: bold;
         font-size: 3rem;
         padding: 20px;
@@ -229,6 +226,7 @@
         margin: 0 auto;
         margin-top: 10px;
     }
+
     /* Form Background Image */
     #form__image {
         background-image: url(../images/form__background.png);
@@ -238,10 +236,12 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     /* Body Background Color */
     body {
         background-color: #3C5E4E;
     }
+
     /* About Background Image*/
     .about__image {
         background-image: url(../images/about__background.png);
@@ -250,7 +250,6 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-
     }
     /* Index Content */
     #index-image-text {
@@ -277,10 +276,12 @@
     #icon-download-right {
         float: right;
     }
+
     /* Contact Page */
     .contact-page__container {
         height: 100%;
     }
+
     /* Contact Background image */
     #contact__image {
         background-image: url(../images/contact__background.png);
@@ -290,6 +291,7 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     /* Footer */
     footer {
         height: 4em;
@@ -318,6 +320,7 @@
     .socials i {
         color: white;
     }
+
     /* Form */
     form {
         color: white;
@@ -362,9 +365,9 @@
         overflow-y: auto;
         background-color: rgba(32, 94, 225, 0.7);
         text-decoration: none;
-
         font-size: 15px;
     }
+
     /* Table on Contact Page */
     table {
         background-color: rgba(32, 94, 225, 0.7);
@@ -388,10 +391,12 @@
     th {
         background-color: black;
     }
+
     /* Terms and Conditions */
     .terms::-webkit-scrollbar {
         width: 0.5em;
     }
+
     /* Submit Background Image */
     .submit__image {
         background-image: url(../images/submit__background.png);
@@ -401,6 +406,7 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     /* Submit Content */
     #submit-image-text {
         color: white;
@@ -425,6 +431,7 @@
         font-size: 1rem;
         padding: 20px;
     }
+
     /* Form Button */
     button {
         color: white;
@@ -441,6 +448,7 @@
     #contact__button:hover {
         text-decoration: underline white 2px;
     }
+
     /* Contact Test */
     #contact-text {
         margin: 0 auto;
@@ -451,6 +459,7 @@
         font-family: teko, sans-serif;
         font-size: 2rem;
     }
+
     /* About Page */
     #about-text {
         margin: 0 auto;
@@ -467,7 +476,6 @@
         gap: 10px;
     }
 
-
     #book-link {
         color: white;
         text-decoration: underline 1px white;
@@ -476,6 +484,7 @@
     #book-link:hover {
         text-decoration: underline 3px white;
     }
+
     /* Contact Page Button */
     #contact__button {
         display: inline-block;
@@ -492,6 +501,7 @@
     #contact__button:hover {
         text-decoration: underline white 3px;
     }
+
     /* Aria Label */
     aria-label {
         display: none;
@@ -502,13 +512,11 @@
     }
 
     /*Media Queries*/
-
     @media screen and (max-width: 1200px) {
 
         form {
             width: 90%;
         }
-
     }
 
     @media screen and (max-width: 1010px) {
@@ -599,10 +607,10 @@
         #index__image {
             height: 100vh;
         }
-
     }
 
     @media screen and (max-width: 600px) {
+
         #about-text {
             font-size: 1.5rem;
         }
@@ -618,10 +626,10 @@
         .p-media-query {
             font-size: 1rem;
         }
-
     }
 
     @media screen and (max-width: 500px) {
+        
         iframe {
             width: 80%;
             height: auto;
